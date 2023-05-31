@@ -7,8 +7,8 @@
     tools:context=".RegisterActivity">
 
     <com.google.android.material.navigation.NavigationView
-        android:layout_width="272dp"
-        android:layout_height="498dp"
+        android:layout_width="275dp"
+        android:layout_height="380dp"
         android:layout_marginTop="124dp"
         android:background="#8BDBFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,10 +36,10 @@
                 android:id="@+id/editPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="72dp"
+                android:layout_marginTop="20dp"
                 android:ems="10"
                 android:hint="Password"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editEmail" />
@@ -48,9 +48,9 @@
                 android:id="@+id/editPassword2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="72dp"
+                android:layout_marginTop="20dp"
                 android:ems="10"
-                android:hint="confirm password"
+                android:hint="Confirm Password"
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -60,13 +60,39 @@
                 android:id="@+id/btnReg"
                 android:layout_width="207dp"
                 android:layout_height="46dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="20dp"
                 android:background="#000000"
                 android:text="REGISTER"
                 app:backgroundTint="#001F8E"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editPassword2" />
+
+            <TextView
+                android:id="@+id/textLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Now"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Have Account?"
+                android:textColor="#3F51B5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnReg" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.navigation.NavigationView>
 </androidx.constraintlayout.widget.ConstraintLayout>
